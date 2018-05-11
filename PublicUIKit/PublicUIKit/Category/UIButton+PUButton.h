@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, ButtonEdgeInsetsStyle) {
 - (void)handleControlEvent:(UIControlEvents)controlEvent withBlock:(ActionBlock)action;
 
 /**
- 设置button的titleLabel和imageView的布局样式，及间距
+ 设置button的titleLabel和imageView的布局样式，及间距（注：须知道按钮大小）
  
  @param style titleLabel和imageView的布局样式
  @param space titleLabel和imageView的间距
