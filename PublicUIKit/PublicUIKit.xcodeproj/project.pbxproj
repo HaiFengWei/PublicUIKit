@@ -26,6 +26,12 @@
 		FAA702B220A57C0B005F7CBE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702A920A57C0A005F7CBE /* AFURLSessionManager.m */; };
 		FAA702B320A57C0B005F7CBE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702AC20A57C0B005F7CBE /* AFNetworkReachabilityManager.m */; };
 		FAA702B420A57C0B005F7CBE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702AE20A57C0B005F7CBE /* AFURLRequestSerialization.m */; };
+		FAA702B720A57C71005F7CBE /* PUService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702B620A57C71005F7CBE /* PUService.m */; };
+		FAA702BA20A57EE6005F7CBE /* NSObject+PUNotNull.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702B920A57EE6005F7CBE /* NSObject+PUNotNull.m */; };
+		FAA702BD20A59778005F7CBE /* NSObject+PUNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702BC20A59778005F7CBE /* NSObject+PUNormal.m */; };
+		FAA702C220A5A1E3005F7CBE /* ExpendFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702C120A5A1E3005F7CBE /* ExpendFile.m */; };
+		FAA702C520A93285005F7CBE /* PUDownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702C420A93284005F7CBE /* PUDownloadTool.m */; };
+		FAA702C820A93567005F7CBE /* NSString+PUString.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702C720A93567005F7CBE /* NSString+PUString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,18 @@
 		FAA702AC20A57C0B005F7CBE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		FAA702AD20A57C0B005F7CBE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		FAA702AE20A57C0B005F7CBE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		FAA702B520A57C71005F7CBE /* PUService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PUService.h; sourceTree = "<group>"; };
+		FAA702B620A57C71005F7CBE /* PUService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PUService.m; sourceTree = "<group>"; };
+		FAA702B820A57EE6005F7CBE /* NSObject+PUNotNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PUNotNull.h"; sourceTree = "<group>"; };
+		FAA702B920A57EE6005F7CBE /* NSObject+PUNotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PUNotNull.m"; sourceTree = "<group>"; };
+		FAA702BB20A59778005F7CBE /* NSObject+PUNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PUNormal.h"; sourceTree = "<group>"; };
+		FAA702BC20A59778005F7CBE /* NSObject+PUNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PUNormal.m"; sourceTree = "<group>"; };
+		FAA702C020A5A1E3005F7CBE /* ExpendFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpendFile.h; sourceTree = "<group>"; };
+		FAA702C120A5A1E3005F7CBE /* ExpendFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpendFile.m; sourceTree = "<group>"; };
+		FAA702C320A93284005F7CBE /* PUDownloadTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PUDownloadTool.h; sourceTree = "<group>"; };
+		FAA702C420A93284005F7CBE /* PUDownloadTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PUDownloadTool.m; sourceTree = "<group>"; };
+		FAA702C620A93567005F7CBE /* NSString+PUString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PUString.h"; sourceTree = "<group>"; };
+		FAA702C720A93567005F7CBE /* NSString+PUString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PUString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +118,11 @@
 		FAA7026920A532CC005F7CBE /* PublicUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				FAA702BE20A5A06D005F7CBE /* Tool */,
 				FAA7029F20A57B2E005F7CBE /* Frameworks */,
 				FAA7029B20A5707F005F7CBE /* Service */,
 				FAA7029A20A57038005F7CBE /* View */,
 				FAA7029020A5467A005F7CBE /* PUCommon.h */,
-				FAA7028020A532E5005F7CBE /* Category */,
 				FAA7026A20A532CC005F7CBE /* AppDelegate.h */,
 				FAA7026B20A532CC005F7CBE /* AppDelegate.m */,
 				FAA7026D20A532CC005F7CBE /* ViewController.h */,
@@ -135,6 +153,12 @@
 				FAA7029820A5627B005F7CBE /* UIBarItem+PUBarItem.m */,
 				FAA7029C20A57180005F7CBE /* UISearchBar+PUSearchBar.h */,
 				FAA7029D20A57180005F7CBE /* UISearchBar+PUSearchBar.m */,
+				FAA702B820A57EE6005F7CBE /* NSObject+PUNotNull.h */,
+				FAA702B920A57EE6005F7CBE /* NSObject+PUNotNull.m */,
+				FAA702BB20A59778005F7CBE /* NSObject+PUNormal.h */,
+				FAA702BC20A59778005F7CBE /* NSObject+PUNormal.m */,
+				FAA702C620A93567005F7CBE /* NSString+PUString.h */,
+				FAA702C720A93567005F7CBE /* NSString+PUString.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -149,6 +173,10 @@
 		FAA7029B20A5707F005F7CBE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				FAA702B520A57C71005F7CBE /* PUService.h */,
+				FAA702B620A57C71005F7CBE /* PUService.m */,
+				FAA702C320A93284005F7CBE /* PUDownloadTool.h */,
+				FAA702C420A93284005F7CBE /* PUDownloadTool.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,6 +208,24 @@
 				FAA702A920A57C0A005F7CBE /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		FAA702BE20A5A06D005F7CBE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FAA702BF20A5A093005F7CBE /* Extension */,
+				FAA7028020A532E5005F7CBE /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		FAA702BF20A5A093005F7CBE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAA702C020A5A1E3005F7CBE /* ExpendFile.h */,
+				FAA702C120A5A1E3005F7CBE /* ExpendFile.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,16 +300,22 @@
 			files = (
 				FAA7029E20A57180005F7CBE /* UISearchBar+PUSearchBar.m in Sources */,
 				FAA7028920A533EE005F7CBE /* UIColor+PUColor.m in Sources */,
+				FAA702C520A93285005F7CBE /* PUDownloadTool.m in Sources */,
 				FAA7028620A533C5005F7CBE /* UIButton+PUButton.m in Sources */,
 				FAA702B220A57C0B005F7CBE /* AFURLSessionManager.m in Sources */,
 				FAA702B020A57C0B005F7CBE /* AFHTTPSessionManager.m in Sources */,
+				FAA702BA20A57EE6005F7CBE /* NSObject+PUNotNull.m in Sources */,
 				FAA7028F20A541F8005F7CBE /* UIImage+PUImage.m in Sources */,
 				FAA702B120A57C0B005F7CBE /* AFURLResponseSerialization.m in Sources */,
+				FAA702C820A93567005F7CBE /* NSString+PUString.m in Sources */,
 				FAA702B420A57C0B005F7CBE /* AFURLRequestSerialization.m in Sources */,
 				FAA702B320A57C0B005F7CBE /* AFNetworkReachabilityManager.m in Sources */,
+				FAA702BD20A59778005F7CBE /* NSObject+PUNormal.m in Sources */,
 				FAA7029920A5627B005F7CBE /* UIBarItem+PUBarItem.m in Sources */,
 				FAA7026F20A532CC005F7CBE /* ViewController.m in Sources */,
 				FAA7027A20A532D1005F7CBE /* main.m in Sources */,
+				FAA702B720A57C71005F7CBE /* PUService.m in Sources */,
+				FAA702C220A5A1E3005F7CBE /* ExpendFile.m in Sources */,
 				FAA7028C20A53452005F7CBE /* UIBarButtonItem+PUBarButtonItem.m in Sources */,
 				FAA7029620A55C95005F7CBE /* UIView+PUView.m in Sources */,
 				FAA702AF20A57C0B005F7CBE /* AFSecurityPolicy.m in Sources */,
