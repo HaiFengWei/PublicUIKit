@@ -75,6 +75,20 @@ typedef void (^ _Nullable Progress)(NSProgress * _Nullable progress);
 + (void)cancelAllRequest;
 
 
+// TODO:断点上产
+// 1、判断文件大小（小文件直接上传、大文件进行流处理并上传）
+// 2、
+
+
+
+
+////图片上传
+//+(void)uploadImageWithPhpStr:(NSString *)phpStr andParametersString:(NSString *)parameters andImageArray:(NSArray *)imageArray andSuccess:(void (^)(id rootObject, id datasObject, bool isSuccess))success andFailure:(void (^)(NSError *error))failure;
+//
+////视频上传
+//+(void)uploadVideoWithPhpStr:(NSString *)phpStr andParametersString:(NSString *)parameters andVideoData:(NSData *)videoData andSuccess:(void (^)(id rootObject, id datasObject, bool isSuccess))success andFailure:(void (^)(NSError *error))failure;
+
+
 ///**
 // *  封装POST图片上传(单张图片)
 // *

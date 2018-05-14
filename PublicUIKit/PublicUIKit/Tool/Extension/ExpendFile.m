@@ -11,18 +11,6 @@
 #include <sys/xattr.h>
 #define Key_FileTotalSize @"Key_FileTotalSize"
 @implementation ExpendFile
-//- (NSInteger)fileLengthForPath:(NSString *)path {
-//    NSInteger fileLength = 0;
-//    NSFileManager *fileManager = [[NSFileManager alloc] init]; // default is not thread safe
-//    if ([fileManager fileExistsAtPath:path]) {
-//        NSError *error = nil;
-//        NSDictionary *fileDict = [fileManager attributesOfItemAtPath:path error:&error];
-//        if (!error && fileDict) {
-//            fileLength = [fileDict fileSize];
-//        }
-//    }
-//    return fileLength;
-//}
 
 + (NSString *)getPathStrByUrlStr:(NSString *)urlStr
 {
@@ -77,6 +65,52 @@
     
     NSInteger fileCurrentSize = [attributes[@"NSFileSize"] integerValue];
     return fileCurrentSize;
+}
+
+- (NSString *)transOriginalSize:(id)originalSize originalUnit:(NSString *)originalUnit toDestinationUnit:(NSString *)destinationUnit
+{
+    
+    if (!(originalUnit!=nil && originalUnit!=NULL && (NSNull *)originalUnit!=[NSNull null] && [originalUnit respondsToSelector:@selector(length)] && [(NSString *)originalUnit length]>0) || !(destinationUnit!=nil && destinationUnit!=NULL && (NSNull *)destinationUnit!=[NSNull null] && [destinationUnit respondsToSelector:@selector(length)] && [(NSString *)destinationUnit length]>0)) {
+        return nil;
+    }
+    double convertedValue = [originalSize doubleValue];
+    NSInteger originalIndex    = 0;
+    NSInteger destinationIndex = 0;
+    NSArray *tokens = [NSArray arrayWithObjects:@"bytes",@"KB",@"MB",@"GB",@"TB",@"PB", @"EB", @"ZB", @"YB",nil];
+    originalIndex   = [tokens indexOfObject:originalUnit];
+    destinationIndex = [tokens indexOfObject:destinationUnit];
+    if (originalIndex > destinationIndex) {
+        NSInteger marginCount = originalIndex - destinationIndex;
+        for (int index = 0; index < marginCount; marginCount++)
+        {
+           convertedValue /= 1024;
+        }
+        return [NSString stringWithFormat:@"%4.2f %@",convertedValue, destinationUnit];
+    }
+    else
+    {
+        NSInteger marginCount = destinationIndex - originalIndex;
+        for (int index = 0; index < marginCount; marginCount++)
+        {
+            convertedValue *= 1024;
+        }
+        return [NSString stringWithFormat:@"%4.2f %@",convertedValue, destinationUnit];
+    }
+}
+
+- (NSString *)transformedValue:(id)value
+{
+    double convertedValue = [value doubleValue];
+    int multiplyFactor = 0;
+    
+    NSArray *tokens = [NSArray arrayWithObjects:@"bytes",@"KB",@"MB",@"GB",@"TB",@"PB", @"EB", @"ZB", @"YB",nil];
+    
+    while (convertedValue > 1024) {
+        convertedValue /= 1024;
+        multiplyFactor++;
+    }
+    
+    return [NSString stringWithFormat:@"%4.2f %@",convertedValue, [tokens objectAtIndex:multiplyFactor]];
 }
 
 //为文件增加一个扩展属性

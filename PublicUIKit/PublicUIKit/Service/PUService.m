@@ -174,6 +174,72 @@
     }];
 }
 
+-(void)uploadImageArray:(NSArray *)imageArray andSuccess:(void (^)(id, id, bool))success andFailure:(void (^)(NSError *))failure{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    NSLog(@"%@",self.params);
+    [manager POST:[self generateURL] parameters:self.params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        NSUInteger i = 0 ;
+        for (UIImage *image in imageArray) {
+            NSData * imgData = UIImageJPEGRepresentation(image, .5);
+            //拼接data
+            /*
+             此方法参数
+             1. 要上传的[二进制数据]
+             2. 对应网站上[upload.php中]处理文件的[字段"file"]
+             3. 要保存在服务器上的[文件名]
+             4. 上传文件的[mimeType]
+             */
+            [formData appendPartWithFileData:imgData name:[NSString stringWithFormat:@"pic[%ld]",(long)i] fileName:@"image.png" mimeType:@"image/jpg"];
+            i++;
+        }
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+//        NSDictionary *rootDic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+//        if (!rootDic || ![rootDic isKindOfClass:[NSDictionary class]] || ![rootDic.allKeys containsObject:@"data"]) {
+//            NSError * error = [[NSError alloc] initWithDomain:@"datasError" code:ErrorCodeNoDatasKey userInfo:@{NSLocalizedDescriptionKey:@"网络请求返回值没有data字段!"}];
+//            failure(error);
+//            return;
+//        }
+//        id datasValue = [rootDic objectForKey:@"data"];
+//        BOOL isSuccess = [[rootDic valueForKey:@"status"] boolValue];
+//        success(rootDic,datasValue,isSuccess);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failure(error);
+    }];
+}
+
+//+(void)uploadVideoWithPhpStr:(NSString *)phpStr andParametersString:(NSString *)parameters andVideoData:(NSData *)videoData andSuccess:(void (^)(id, id, bool))success andFailure:(void (^)(NSError *))failure{
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    NSDictionary *params = [self createPostParameterDictionaryWithUrlString:parameters];
+//    NSLog(@"%@",params);
+//    [manager POST:[NSString stringWithFormat:@"%@%@",HTTP_AFNETWORKING_POST_URL,phpStr] parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//        [formData appendPartWithFileData:videoData name:@"video" fileName:@"video.mp4" mimeType:@"video/mp4"];
+//        
+//    } progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSDictionary *rootDic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+//        if (!rootDic || ![rootDic isKindOfClass:[NSDictionary class]] || ![rootDic.allKeys containsObject:@"data"]) {
+//            NSError * error = [[NSError alloc] initWithDomain:@"datasError" code:ErrorCodeNoDatasKey userInfo:@{NSLocalizedDescriptionKey:@"网络请求返回值没有data字段!"}];
+//            failure(error);
+//            return;
+//        }
+//        id datasValue = [rootDic objectForKey:@"data"];
+//        BOOL isSuccess = [[rootDic valueForKey:@"status"] boolValue];
+//        success(rootDic,datasValue,isSuccess);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        failure(error);
+//    }];
+//    
+//}
+
 //参数加密
 //- (void)parameterEncrypted{
 //

@@ -32,6 +32,20 @@
 		FAA702C220A5A1E3005F7CBE /* ExpendFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702C120A5A1E3005F7CBE /* ExpendFile.m */; };
 		FAA702C520A93285005F7CBE /* PUDownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702C420A93284005F7CBE /* PUDownloadTool.m */; };
 		FAA702C820A93567005F7CBE /* NSString+PUString.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702C720A93567005F7CBE /* NSString+PUString.m */; };
+		FAA702E620A98C70005F7CBE /* PUAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702E520A98C70005F7CBE /* PUAlert.m */; };
+		FAA702F420A99B92005F7CBE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702EA20A99B92005F7CBE /* FMDatabase.m */; };
+		FAA702F520A99B92005F7CBE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702EC20A99B92005F7CBE /* FMDatabaseAdditions.m */; };
+		FAA702F620A99B92005F7CBE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702EE20A99B92005F7CBE /* FMDatabasePool.m */; };
+		FAA702F720A99B92005F7CBE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702F020A99B92005F7CBE /* FMDatabaseQueue.m */; };
+		FAA702F820A99B92005F7CBE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702F220A99B92005F7CBE /* FMResultSet.m */; };
+		FAA702F920A99B92005F7CBE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAA702F320A99B92005F7CBE /* Info.plist */; };
+		FAA702FF20A99BB6005F7CBE /* JKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702FC20A99BB6005F7CBE /* JKDBHelper.m */; };
+		FAA7030020A99BB6005F7CBE /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA702FE20A99BB6005F7CBE /* JKDBModel.m */; };
+		FAA7030520A99E36005F7CBE /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7030420A99E36005F7CBE /* TestModel.m */; };
+		FAA7030820A99E4D005F7CBE /* TestStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7030720A99E4D005F7CBE /* TestStudentModel.m */; };
+		FAA7030F20A9A6B8005F7CBE /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7030B20A9A6B8005F7CBE /* NSObject+YYModel.m */; };
+		FAA7031020A9A6B8005F7CBE /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7030D20A9A6B8005F7CBE /* YYClassInfo.m */; };
+		FAA7031320A9A805005F7CBE /* PUModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7031220A9A805005F7CBE /* PUModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +100,35 @@
 		FAA702C420A93284005F7CBE /* PUDownloadTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PUDownloadTool.m; sourceTree = "<group>"; };
 		FAA702C620A93567005F7CBE /* NSString+PUString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PUString.h"; sourceTree = "<group>"; };
 		FAA702C720A93567005F7CBE /* NSString+PUString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PUString.m"; sourceTree = "<group>"; };
+		FAA702E420A98C70005F7CBE /* PUAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PUAlert.h; sourceTree = "<group>"; };
+		FAA702E520A98C70005F7CBE /* PUAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PUAlert.m; sourceTree = "<group>"; };
+		FAA702E820A99B92005F7CBE /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		FAA702E920A99B92005F7CBE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		FAA702EA20A99B92005F7CBE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		FAA702EB20A99B92005F7CBE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		FAA702EC20A99B92005F7CBE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		FAA702ED20A99B92005F7CBE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		FAA702EE20A99B92005F7CBE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		FAA702EF20A99B92005F7CBE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		FAA702F020A99B92005F7CBE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		FAA702F120A99B92005F7CBE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		FAA702F220A99B92005F7CBE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FAA702F320A99B92005F7CBE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA702FB20A99BB6005F7CBE /* JKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBHelper.h; sourceTree = "<group>"; };
+		FAA702FC20A99BB6005F7CBE /* JKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBHelper.m; sourceTree = "<group>"; };
+		FAA702FD20A99BB6005F7CBE /* JKDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBModel.h; sourceTree = "<group>"; };
+		FAA702FE20A99BB6005F7CBE /* JKDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBModel.m; sourceTree = "<group>"; };
+		FAA7030320A99E36005F7CBE /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		FAA7030420A99E36005F7CBE /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		FAA7030620A99E4D005F7CBE /* TestStudentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStudentModel.h; sourceTree = "<group>"; };
+		FAA7030720A99E4D005F7CBE /* TestStudentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStudentModel.m; sourceTree = "<group>"; };
+		FAA7030A20A9A6B8005F7CBE /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		FAA7030B20A9A6B8005F7CBE /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		FAA7030C20A9A6B8005F7CBE /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		FAA7030D20A9A6B8005F7CBE /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		FAA7030E20A9A6B8005F7CBE /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		FAA7031120A9A805005F7CBE /* PUModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PUModel.h; sourceTree = "<group>"; };
+		FAA7031220A9A805005F7CBE /* PUModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PUModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +161,8 @@
 		FAA7026920A532CC005F7CBE /* PublicUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				FAA7030220A99E12005F7CBE /* Test */,
+				FAA7030120A99BD7005F7CBE /* SourceData */,
 				FAA702BE20A5A06D005F7CBE /* Tool */,
 				FAA7029F20A57B2E005F7CBE /* Frameworks */,
 				FAA7029B20A5707F005F7CBE /* Service */,
@@ -166,6 +211,7 @@
 		FAA7029A20A57038005F7CBE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAA702E320A98C57005F7CBE /* PUAlert */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +230,8 @@
 		FAA7029F20A57B2E005F7CBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAA7030920A9A6B8005F7CBE /* YYModel */,
+				FAA702E720A99B92005F7CBE /* fmdb */,
 				FAA702A020A57BF8005F7CBE /* AFNetworking */,
 			);
 			path = Frameworks;
@@ -226,6 +274,78 @@
 				FAA702C120A5A1E3005F7CBE /* ExpendFile.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAA702E320A98C57005F7CBE /* PUAlert */ = {
+			isa = PBXGroup;
+			children = (
+				FAA702E420A98C70005F7CBE /* PUAlert.h */,
+				FAA702E520A98C70005F7CBE /* PUAlert.m */,
+			);
+			path = PUAlert;
+			sourceTree = "<group>";
+		};
+		FAA702E720A99B92005F7CBE /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				FAA702E820A99B92005F7CBE /* FMDB.h */,
+				FAA702E920A99B92005F7CBE /* FMDatabase.h */,
+				FAA702EA20A99B92005F7CBE /* FMDatabase.m */,
+				FAA702EB20A99B92005F7CBE /* FMDatabaseAdditions.h */,
+				FAA702EC20A99B92005F7CBE /* FMDatabaseAdditions.m */,
+				FAA702ED20A99B92005F7CBE /* FMDatabasePool.h */,
+				FAA702EE20A99B92005F7CBE /* FMDatabasePool.m */,
+				FAA702EF20A99B92005F7CBE /* FMDatabaseQueue.h */,
+				FAA702F020A99B92005F7CBE /* FMDatabaseQueue.m */,
+				FAA702F120A99B92005F7CBE /* FMResultSet.h */,
+				FAA702F220A99B92005F7CBE /* FMResultSet.m */,
+				FAA702F320A99B92005F7CBE /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		FAA702FA20A99BB6005F7CBE /* DBModel(改) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA702FB20A99BB6005F7CBE /* JKDBHelper.h */,
+				FAA702FC20A99BB6005F7CBE /* JKDBHelper.m */,
+				FAA702FD20A99BB6005F7CBE /* JKDBModel.h */,
+				FAA702FE20A99BB6005F7CBE /* JKDBModel.m */,
+				FAA7031120A9A805005F7CBE /* PUModel.h */,
+				FAA7031220A9A805005F7CBE /* PUModel.m */,
+			);
+			path = "DBModel(改)";
+			sourceTree = "<group>";
+		};
+		FAA7030120A99BD7005F7CBE /* SourceData */ = {
+			isa = PBXGroup;
+			children = (
+				FAA702FA20A99BB6005F7CBE /* DBModel(改) */,
+			);
+			path = SourceData;
+			sourceTree = "<group>";
+		};
+		FAA7030220A99E12005F7CBE /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7030320A99E36005F7CBE /* TestModel.h */,
+				FAA7030420A99E36005F7CBE /* TestModel.m */,
+				FAA7030620A99E4D005F7CBE /* TestStudentModel.h */,
+				FAA7030720A99E4D005F7CBE /* TestStudentModel.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FAA7030920A9A6B8005F7CBE /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAA7030A20A9A6B8005F7CBE /* NSObject+YYModel.h */,
+				FAA7030B20A9A6B8005F7CBE /* NSObject+YYModel.m */,
+				FAA7030C20A9A6B8005F7CBE /* YYClassInfo.h */,
+				FAA7030D20A9A6B8005F7CBE /* YYClassInfo.m */,
+				FAA7030E20A9A6B8005F7CBE /* YYModel.h */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA702F920A99B92005F7CBE /* Info.plist in Resources */,
 				FAA7027720A532D1005F7CBE /* LaunchScreen.storyboard in Resources */,
 				FAA7027420A532D1005F7CBE /* Assets.xcassets in Resources */,
 				FAA7027220A532CC005F7CBE /* Main.storyboard in Resources */,
@@ -300,8 +421,13 @@
 			files = (
 				FAA7029E20A57180005F7CBE /* UISearchBar+PUSearchBar.m in Sources */,
 				FAA7028920A533EE005F7CBE /* UIColor+PUColor.m in Sources */,
+				FAA7030020A99BB6005F7CBE /* JKDBModel.m in Sources */,
+				FAA702F820A99B92005F7CBE /* FMResultSet.m in Sources */,
 				FAA702C520A93285005F7CBE /* PUDownloadTool.m in Sources */,
+				FAA7030820A99E4D005F7CBE /* TestStudentModel.m in Sources */,
 				FAA7028620A533C5005F7CBE /* UIButton+PUButton.m in Sources */,
+				FAA702F520A99B92005F7CBE /* FMDatabaseAdditions.m in Sources */,
+				FAA702E620A98C70005F7CBE /* PUAlert.m in Sources */,
 				FAA702B220A57C0B005F7CBE /* AFURLSessionManager.m in Sources */,
 				FAA702B020A57C0B005F7CBE /* AFHTTPSessionManager.m in Sources */,
 				FAA702BA20A57EE6005F7CBE /* NSObject+PUNotNull.m in Sources */,
@@ -309,17 +435,25 @@
 				FAA702B120A57C0B005F7CBE /* AFURLResponseSerialization.m in Sources */,
 				FAA702C820A93567005F7CBE /* NSString+PUString.m in Sources */,
 				FAA702B420A57C0B005F7CBE /* AFURLRequestSerialization.m in Sources */,
+				FAA7031020A9A6B8005F7CBE /* YYClassInfo.m in Sources */,
 				FAA702B320A57C0B005F7CBE /* AFNetworkReachabilityManager.m in Sources */,
+				FAA7031320A9A805005F7CBE /* PUModel.m in Sources */,
 				FAA702BD20A59778005F7CBE /* NSObject+PUNormal.m in Sources */,
+				FAA702F620A99B92005F7CBE /* FMDatabasePool.m in Sources */,
+				FAA7030520A99E36005F7CBE /* TestModel.m in Sources */,
 				FAA7029920A5627B005F7CBE /* UIBarItem+PUBarItem.m in Sources */,
+				FAA702F420A99B92005F7CBE /* FMDatabase.m in Sources */,
 				FAA7026F20A532CC005F7CBE /* ViewController.m in Sources */,
 				FAA7027A20A532D1005F7CBE /* main.m in Sources */,
 				FAA702B720A57C71005F7CBE /* PUService.m in Sources */,
 				FAA702C220A5A1E3005F7CBE /* ExpendFile.m in Sources */,
 				FAA7028C20A53452005F7CBE /* UIBarButtonItem+PUBarButtonItem.m in Sources */,
+				FAA702FF20A99BB6005F7CBE /* JKDBHelper.m in Sources */,
 				FAA7029620A55C95005F7CBE /* UIView+PUView.m in Sources */,
 				FAA702AF20A57C0B005F7CBE /* AFSecurityPolicy.m in Sources */,
+				FAA7030F20A9A6B8005F7CBE /* NSObject+YYModel.m in Sources */,
 				FAA7026C20A532CC005F7CBE /* AppDelegate.m in Sources */,
+				FAA702F720A99B92005F7CBE /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,25 @@
 
 
 /**
+ 转换文件大小单位（@"bytes",@"KB",@"MB",@"GB",@"TB",@"PB", @"EB", @"ZB", @"YB"）
+
+ @param originalSize    原始单位下大小
+ @param originalUnit    原始单位
+ @param destinationUnit 目标单位
+ @return                目标单位下大小
+ */
+- (NSString *)transOriginalSize:(id)originalSize originalUnit:(NSString *)originalUnit toDestinationUnit:(NSString *)destinationUnit;
+
+
+/**
+  转换文件大小(原始单位为bytes)
+
+ @param value 文件大小
+ @return      对应目标打下
+ */
+- (NSString *)transformedValue:(id)value;
+
+/**
  根据url字符串配置路径
  
  @param urlStr url字符串
