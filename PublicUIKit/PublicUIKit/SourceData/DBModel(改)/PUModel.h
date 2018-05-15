@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- 所有继承于PUModel或PUModel子类的模型均能存进数据库
+ 所有继承于PUModel或PUModel子类的模型均能存进数据库(为数据库支持类型)
  */
 @interface PUModel : NSObject<NSCoding,NSCopying>
 
